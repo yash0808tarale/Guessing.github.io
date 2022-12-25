@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark : #350363;
+    --background : #ffe9db;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image:url('background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    position: relative;
+    width: 35%;
+    text-align: center;
+    background-color:rgba(3, 114, 107, 0.25);
+    border: solo var(--dark);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+    color: #ffffff;
+}
+h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+}
+img{
+    width:40%;
+    max-height:22rem;
+    margin: 1rem 0 4rem 0;
+}
+button{
+    width: 100%;
+    height: 7rem;
+    background-image: linear-gradient(92.88deg,#0b6f67 9.16%, #120b3e 43.89%,#031d5c 64.72%);
+    border-radius: 0.8rem;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 1rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0,0,0,0.25) 0 3px 8px; 
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+}
+button:hover{
+    box-shadow: rgba(80,63,205,0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+button:last-child{
+    background: var(--dark);
+    margin-bottom: 0;
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+#gameArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#newGameButton{
+    margin: 2rem 0;
+}
+input{
+    border: 0.1rem solid lightgray;
+    background: transparent;
+    margin: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+.stats{
+    text-align: left;
+    margin-bottom: 4rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info span{
+    font-size: 20px;
+    color: #ff0511;
+
+}
+@media(max-width:1020px){
+    main{
+        width:50%;
+        margin: 20px 20px;
+    }
+    button{
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:708px){
+    main{
+        width:70%;
+        margin: 20px 20px;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:502px){
+    main{
+        width:80%;
+        margin: 0 20px;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:502px){
+    main{
+        width:100%;
+        margin:0 20px;
+    }
+    button{
+        font-size: 1.5rem;
+    }
+}
